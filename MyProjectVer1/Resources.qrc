@@ -1,0 +1,35 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>drinks_images/whiterussian.png</file>
+        <file>drinks_images/longisland.png</file>
+        <file>drinks_images/sexbeach.png</file>
+        <file>drinks_images/johncollins.png</file>
+        <file>drinks_images/bluegin.png</file>
+        <file>drinks_images/drymartini.png</file>
+        <file>drinks_images/barbadossurprise.png</file>
+        <file>drinks_images/cubalibre.png</file>
+        <file>drinks_images/daiquiri.png</file>
+        <file>drinks_images/oldfashioned.png</file>
+        <file>drinks_images/whiskeysour.png</file>
+        <file>drinks_images/revolver.png</file>
+        <file>drinks_images/jagerbomb.png</file>
+        <file>drinks_images/aperolspritz.png</file>
+        <file>drinks_images/tequilasunrise.png</file>
+        <file>drinks_images/frog.png</file>
+        <file>drinks_images/softcuracao.png</file>
+        <file>drinks_images/tropicalrefresher.png</file>
+        <file>drinks_images/rainbowpineapple.png</file>
+        <file>drinks_images/softmojito.png</file>
+        <file>icons/login.png</file>
+        <file>icons/save.jpg</file>
+        <file>icons/print.jpg</file>
+        <file>icons/about.jpg</file>
+        <file>icons/author.png</file>
+        <file>icons/error.png</file>
+        <file>icons/favorite.png</file>
+        <file>icons/add.png</file>
+        <file>icons/favoriteclicked.png</file>
+        <file>icons/favoritenotclicked.png</file>
+        <file>Login/login.txt</file>
+    </qresource>
+</RCC>

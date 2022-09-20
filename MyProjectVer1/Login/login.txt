@@ -1,0 +1,8 @@
+piotr	gubala
+dzien	dobry
+gitara	siema
+wydzial	fizyki
+login	haslo
+muchas	gracias
+qt	creator
+prosze	zdane

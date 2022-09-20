@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>856</width>
+    <height>576</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Drink Maker 2022</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QTextEdit" name="textEdit_ingredients">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QTextEdit" name="textEdit_recipe">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_author">
+        <property name="font">
+         <font>
+          <pointsize>6</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Application made by Piotr Gubała</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QCheckBox" name="favoritebox">
+        <property name="text">
+         <string>Add to favorites</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="0" column="0" colspan="2">
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_drinkmaker">
+        <property name="font">
+         <font>
+          <family>Rockwell Extra Bold</family>
+          <pointsize>26</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>(C) Drink Maker 2022 (R)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_title">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Please select an option from menu above or a toolbar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_img">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>856</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionApplication"/>
+    <addaction name="actionAuthor"/>
+   </widget>
+   <widget class="QMenu" name="menuDrinks">
+    <property name="title">
+     <string>Drinks</string>
+    </property>
+    <widget class="QMenu" name="menuAlcoholic">
+     <property name="title">
+      <string>Alcoholic</string>
+     </property>
+     <widget class="QMenu" name="menuVodka_based">
+      <property name="title">
+       <string>Vodka based</string>
+      </property>
+      <addaction name="actionWhite_Russian"/>
+      <addaction name="actionLong_Island_Ice_Tea"/>
+      <addaction name="actionSex_on_the_beach"/>
+     </widget>
+     <widget class="QMenu" name="menuGin_based">
+      <property name="title">
+       <string>Gin based</string>
+      </property>
+      <addaction name="actionJohn_Collins"/>
+      <addaction name="actionDry_Martini"/>
+      <addaction name="actionBlue_Gin"/>
+     </widget>
+     <widget class="QMenu" name="menuRum_based">
+      <property name="title">
+       <string>Rum based</string>
+      </property>
+      <addaction name="actionCuba_Libre"/>
+      <addaction name="actionDaiquiri"/>
+      <addaction name="actionBarbados_Surprise"/>
+     </widget>
+     <widget class="QMenu" name="menuWhiskey_based">
+      <property name="title">
+       <string>Whiskey based</string>
+      </property>
+      <addaction name="actionOld_Fashioned"/>
+      <addaction name="actionWhiskey_Sour"/>
+      <addaction name="actionRevolver"/>
+     </widget>
+     <widget class="QMenu" name="menuOther">
+      <property name="title">
+       <string>Other</string>
+      </property>
+      <addaction name="actionJagerbomb"/>
+      <addaction name="actionAperol_Spritz"/>
+      <addaction name="actionTequila_Sunrise"/>
+     </widget>
+     <addaction name="menuVodka_based"/>
+     <addaction name="menuGin_based"/>
+     <addaction name="menuRum_based"/>
+     <addaction name="menuWhiskey_based"/>
+     <addaction name="menuOther"/>
+    </widget>
+    <widget class="QMenu" name="menuNon_alcoholic">
+     <property name="title">
+      <string>Non-alcoholic</string>
+     </property>
+     <addaction name="actionFrog"/>
+     <addaction name="actionTropical_Refresher"/>
+     <addaction name="actionSoft_Curacao"/>
+     <addaction name="actionRainbow_Pineapple"/>
+     <addaction name="actionSoft_Mojito"/>
+    </widget>
+    <addaction name="menuAlcoholic"/>
+    <addaction name="menuNon_alcoholic"/>
+    <addaction name="separator"/>
+    <addaction name="actionCoffee"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionSave_recipe"/>
+    <addaction name="actionPrint_recipe"/>
+   </widget>
+   <widget class="QMenu" name="menuUser">
+    <property name="title">
+     <string>User</string>
+    </property>
+    <addaction name="actionLogin"/>
+    <addaction name="actionFavorites"/>
+    <addaction name="actionCreate_own_recipe"/>
+   </widget>
+   <addaction name="menuDrinks"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuUser"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionLogin"/>
+   <addaction name="actionFavorites"/>
+   <addaction name="actionCreate_own_recipe"/>
+   <addaction name="actionSave_recipe"/>
+   <addaction name="actionPrint_recipe"/>
+   <addaction name="actionApplication"/>
+   <addaction name="actionAuthor"/>
+  </widget>
+  <action name="actionApplication">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/resources/icons/about.jpg</normaloff>:/resources/icons/about.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Application</string>
+   </property>
+  </action>
+  <action name="actionAuthor">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/resources/icons/author.png</normaloff>:/resources/icons/author.png</iconset>
+   </property>
+   <property name="text">
+    <string>Author</string>
+   </property>
+  </action>
+  <action name="actionCoffee">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/resources/icons/error.png</normaloff>:/resources/icons/error.png</iconset>
+   </property>
+   <property name="text">
+    <string>Coffee</string>
+   </property>
+  </action>
+  <action name="actionWhite_Russian">
+   <property name="text">
+    <string>White Russian</string>
+   </property>
+  </action>
+  <action name="actionLong_Island_Ice_Tea">
+   <property name="text">
+    <string>Long Island Ice Tea</string>
+   </property>
+  </action>
+  <action name="actionSex_on_the_beach">
+   <property name="text">
+    <string>Sex on the beach</string>
+   </property>
+  </action>
+  <action name="actionJohn_Collins">
+   <property name="text">
+    <string>John Collins</string>
+   </property>
+  </action>
+  <action name="actionDry_Martini">
+   <property name="text">
+    <string>Dry Martini</string>
+   </property>
+  </action>
+  <action name="actionBlue_Gin">
+   <property name="text">
+    <string>Blue Gin</string>
+   </property>
+  </action>
+  <action name="actionCuba_Libre">
+   <property name="text">
+    <string>Cuba Libre</string>
+   </property>
+  </action>
+  <action name="actionDaiquiri">
+   <property name="text">
+    <string>Daiquiri</string>
+   </property>
+  </action>
+  <action name="actionBarbados_Surprise">
+   <property name="text">
+    <string>Barbados Surprise</string>
+   </property>
+  </action>
+  <action name="actionOld_Fashioned">
+   <property name="text">
+    <string>Old Fashioned</string>
+   </property>
+  </action>
+  <action name="actionWhiskey_Sour">
+   <property name="text">
+    <string>Whiskey Sour</string>
+   </property>
+  </action>
+  <action name="actionRevolver">
+   <property name="text">
+    <string>Revolver</string>
+   </property>
+  </action>
+  <action name="actionJagerbomb">
+   <property name="text">
+    <string>Jagerbomb</string>
+   </property>
+  </action>
+  <action name="actionAperol_Spritz">
+   <property name="text">
+    <string>Aperol Spritz</string>
+   </property>
+  </action>
+  <action name="actionTequila_Sunrise">
+   <property name="text">
+    <string>Tequila Sunrise</string>
+   </property>
+  </action>
+  <action name="actionFrog">
+   <property name="text">
+    <string>Frog</string>
+   </property>
+  </action>
+  <action name="actionTropical_Refresher">
+   <property name="text">
+    <string>Tropical Refresher</string>
+   </property>
+  </action>
+  <action name="actionSoft_Curacao">
+   <property name="text">
+    <string>Soft Curacao</string>
+   </property>
+  </action>
+  <action name="actionRainbow_Pineapple">
+   <property name="text">
+    <string>Rainbow Pineapple</string>
+   </property>
+  </action>
+  <action name="actionSoft_Mojito">
+   <property name="text">
+    <string>Soft Mojito</string>
+   </property>
+  </action>
+  <action name="actionSave_recipe">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/resources/icons/save.jpg</normaloff>:/resources/icons/save.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Save recipe</string>
+   </property>
+  </action>
+  <action name="actionPrint_recipe">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/resources/icons/print.jpg</normaloff>:/resources/icons/print.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Print recipe</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/resources/icons/login.png</normaloff>:/resources/icons/login.png</iconset>
+   </property>
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
+  <action name="actionFavorites">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/resources/icons/favorite.png</normaloff>:/resources/icons/favorite.png</iconset>
+   </property>
+   <property name="text">
+    <string>Favorites</string>
+   </property>
+  </action>
+  <action name="actionCreate_own_recipe">
+   <property name="icon">
+    <iconset resource="Resources.qrc">
+     <normaloff>:/resources/icons/add.png</normaloff>:/resources/icons/add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Create own recipe</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="Resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
